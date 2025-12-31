@@ -5,7 +5,7 @@ hello world
 <div>
     @foreach($groups as $group)
        <li>
-        <a href="/group/{{$group->id}}">{{ $group->name }}</a>
+        <a href=" {{ route('groups.show', $group) }}">{{ $group->name }}</a>
        </li>
     @endforeach
 </div>
